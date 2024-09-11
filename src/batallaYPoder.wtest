@@ -1,0 +1,45 @@
+import capos.*
+
+test "batalla" {
+	rolando.capacidad(3)
+	rolando.encontrar(espada)
+	rolando.encontrar(armadura)
+	rolando.encontrar(collar)
+	
+	assert.equals( 5 , rolando.poderBase())
+	assert.equals( 5 , espada.poder(rolando))
+	assert.equals( 6 , armadura.poder(rolando))
+	assert.equals( 3 , collar.poder(rolando))
+	
+	rolando.batalla()
+	
+	assert.equals( 6 , rolando.poderBase())
+	assert.equals( 3 , espada.poder(rolando))
+	assert.equals( 6 , armadura.poder(rolando))
+	assert.equals( 3 , collar.poder(rolando))
+
+	rolando.batalla()
+	
+	assert.equals( 7 , rolando.poderBase())
+	assert.equals( 3.5 , espada.poder(rolando))
+	assert.equals( 6 , armadura.poder(rolando))
+	assert.equals( 5 , collar.poder(rolando))
+
+	rolando.batalla()
+	
+	assert.equals( 8 , rolando.poderBase())
+	assert.equals( 4 , espada.poder(rolando))
+	assert.equals( 6 , armadura.poder(rolando))
+	assert.equals( 6 , collar.poder(rolando))
+	
+}
+
+test "poder de rolando" {
+
+	rolando.capacidad(3)
+	rolando.encontrar(espada)
+	rolando.encontrar(armadura)
+	rolando.encontrar(collar)
+	assert.equals(19, rolando.poder())
+	
+}

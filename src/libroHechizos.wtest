@@ -1,0 +1,16 @@
+import capos.*
+
+test "libro" {
+	
+	castillo.agregarArtefactos(#{espada, armadura, collar})
+	libro.hechizos([bendicion, invisibilidad,invocacion])
+	rolando.encontrar(libro)
+	assert.equals(4, libro.poder(rolando))
+	rolando.batalla()
+	assert.equals(6, libro.poder(rolando))
+	rolando.batalla()
+	assert.equals(7, libro.poder(rolando))
+	rolando.batalla()
+	assert.equals(0, libro.poder(rolando))
+	
+}

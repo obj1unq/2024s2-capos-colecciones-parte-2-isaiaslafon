@@ -1,0 +1,36 @@
+import capos.*
+
+test "enemigos vencibles y moradas conquistables" {
+	rolando.capacidad(3)
+	rolando.encontrar(espada)
+	rolando.encontrar(armadura)
+	rolando.encontrar(collar)
+	
+	assert.equals(#{archibaldo, astra}, eretia.enemigosVencibles(rolando))
+	assert.equals(#{palacio, torre}, eretia.moradasConquistables(rolando))
+}
+
+test "poderoso" {
+	rolando.capacidad(3)
+	rolando.encontrar(espada)
+	rolando.encontrar(armadura)
+	rolando.encontrar(collar)
+	
+	assert.notThat(eretia.poderoso(rolando))
+	rolando.poderBase(10)
+	assert.that(eretia.poderoso(rolando))
+}
+
+test "artefacto fatal" {
+	rolando.capacidad(3)
+	rolando.encontrar(espada)
+	rolando.encontrar(armadura)
+	rolando.encontrar(collar)
+	rolando.poderBase(15)
+	
+	assert.that(rolando.tieneArmaFatal(astra))
+	assert.equals(espada, rolando.armaFatal(astra))
+	
+	assert.notThat(rolando.tieneArmaFatal(caterina))
+	assert.throwsException({rolando.armaFatal(caterina)})
+}

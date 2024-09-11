@@ -1,0 +1,26 @@
+{"level":"info","message":"⌛ Building environment","timeElapsed":248,"timestamp":"2024-09-11T20:17:36.208Z"}
+{"level":"info","message":"onRequest - WORKSPACE_URI:file:///c%3A/wvsc/workspace/caposCollectionsParte2TS","timestamp":"2024-09-11T20:17:36.217Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":224,"timestamp":"2024-09-11T20:17:36.442Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":115,"timestamp":"2024-09-11T20:17:36.559Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":131,"timestamp":"2024-09-11T20:17:36.692Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":138,"timestamp":"2024-09-11T20:17:36.836Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":141,"timestamp":"2024-09-11T20:17:36.980Z"}
+{"level":"info","message":"⌛ Validating src/batallaYPoder.wtest","timeElapsed":273,"timestamp":"2024-09-11T20:17:37.254Z"}
+{"level":"info","message":"⌛ Validating src/libroHechizos.wtest","timeElapsed":236,"timestamp":"2024-09-11T20:17:37.492Z"}
+{"level":"info","message":"⌛ Validating src/enemigos.wtest","timeElapsed":227,"timestamp":"2024-09-11T20:17:37.720Z"}
+{"level":"info","message":"⌛ Validating src/referencias.wtest","timeElapsed":216,"timestamp":"2024-09-11T20:17:37.937Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":200,"timestamp":"2024-09-11T20:17:38.137Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":208,"timestamp":"2024-09-11T20:17:38.355Z"}
+{"level":"info","message":"⌛ Validating src/capos.wlk","timeElapsed":193,"timestamp":"2024-09-11T20:17:38.555Z"}
+{"level":"info","message":"⌛ Validating src/batallaYPoder.wtest","timeElapsed":202,"timestamp":"2024-09-11T20:17:38.758Z"}
+{"level":"info","message":"⌛ Validating src/libroHechizos.wtest","timeElapsed":134,"timestamp":"2024-09-11T20:17:38.892Z"}
+{"level":"info","message":"⌛ Validating src/enemigos.wtest","timeElapsed":129,"timestamp":"2024-09-11T20:17:39.021Z"}
+{"level":"info","message":"⌛ Validating src/referencias.wtest","timeElapsed":134,"timestamp":"2024-09-11T20:17:39.155Z"}
+{"level":"info","message":"⌛ Validating src/capos.wlk","timeElapsed":122,"timestamp":"2024-09-11T20:17:39.278Z"}
+{"level":"info","message":"⌛ Validating src/batallaYPoder.wtest","timeElapsed":156,"timestamp":"2024-09-11T20:17:39.435Z"}
+{"level":"info","message":"⌛ Validating src/libroHechizos.wtest","timeElapsed":132,"timestamp":"2024-09-11T20:17:39.567Z"}
+{"level":"info","message":"⌛ Validating src/enemigos.wtest","timeElapsed":125,"timestamp":"2024-09-11T20:17:39.693Z"}
+{"level":"info","message":"⌛ Validating src/referencias.wtest","timeElapsed":139,"timestamp":"2024-09-11T20:17:39.832Z"}
+{"level":"info","message":"⌛ Validating src/capos.wlk","timeElapsed":146,"timestamp":"2024-09-11T20:17:39.979Z"}
+{"failures":[],"level":"info","message":"🧪 Test runner executed on c:\\wvsc\\workspace\\caposCollectionsParte2TS","result":{"failed":0,"ok":1},"timeElapsed":670,"timestamp":"2024-09-11T20:19:23.892Z"}
+{"failures":[{"error":["wollok.lang.EvaluationError wrapping TypeScript Error: Could not resolve reference to bendicion or its a reference to void","  at src.libroHechizos.\"libro\" [src/libroHechizos.wtest:3]"],"test":"src.libroHechizos.\"libro\""}],"level":"info","message":"🧪 Test runner executed on c:\\wvsc\\workspace\\caposCollectionsParte2TS","result":{"failed":1,"ok":0},"timeElapsed":682,"timestamp":"2024-09-11T20:19:29.569Z"}
