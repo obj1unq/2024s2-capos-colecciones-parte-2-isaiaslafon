@@ -45,6 +45,7 @@ coleccion.map({cosa => cosa.relleno()}) // Transforma una colección en un lista
 
 coleccion.forEach({cosa => cosa.hacer()}) //Realiza las ordene con cada elemento de la colección (si se usa para consulta es un mal uso!).
 
+https://www.wollok.org/documentation/language/#wollok.lang.Collection
 */
 
 object castillo {
