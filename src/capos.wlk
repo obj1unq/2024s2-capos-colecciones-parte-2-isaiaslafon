@@ -2,12 +2,15 @@ import artefactos.*
 import enemigos.*
 
 /*
-lista.head()
-lista.tail() 
-lista.get(nro)
+lista.head() //Devuelve el primer elemento de la lista.
+lista.last()  //Devuelve el último elemento de una lista
+lista.get(nro) //Devuelve el nro elemento dado (de 0 a size - 1), debe haber al menos nro elementos.
+lista.reverse() //Devuelve una lista con los elementos invertidos de la original.
 
-
+coleccion.asSet() / asList() //Devuelve una nueva colección pero como un conjunto o una lista (el orden de conjunto a lista no tiene reglas establecidas).
 coleccion.clear() //Elimina todas las referecias de una colección (la vacía)
+
+coleccion.copy() //Devuelve una copia de la lista.
 
 coleccion.add(object) // agrega el elemento a la colección dada, en el casod e una lista lo agrega al final, si es un conjunto y ya estaba simplemente queda como está
 coleccion.remove(object) // quita 1 una aparición del objeto de la colección si existiese (si no está no hace nada), si hay más de 1 queda una menos.
