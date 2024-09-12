@@ -2,29 +2,45 @@ import artefactos.*
 import enemigos.*
 
 /*
-lista.tail()
-lista.get(nro)
 lista.head()
-coleccion.isEmpty()
+lista.tail() 
+lista.get(nro)
 
-coleccion.min()
-coleccion.max()
 
-coleccion.min({})
-coleccion.max({})
+coleccion.clear() //Elimina todas las referecias de una colección (la vacía)
 
-coleccion.remove(object)
+coleccion.add(object) // agrega el elemento a la colección dada, en el casod e una lista lo agrega al final, si es un conjunto y ya estaba simplemente queda como está
+coleccion.remove(object) // quita 1 una aparición del objeto de la colección si existiese (si no está no hace nada), si hay más de 1 queda una menos.
 
-coleccion.size()
+coleccion.addAll(coleccion) //Agrega todos los elementos de una colección dada.
+coleccion.removeAll(coleccion) //Quita todos los elementos de una colección dada 1 vez.
 
-coleccion.any({cosa => cosa.esGrande()})
-coleccion.all({cosa => cosa.esGigante()}) //
+coleccion.contains(cosa) // Indica si existe el objeto en la colección dada al menos 1 vez.
 
-coleccion.count({cosa => cosa.esGrande()}) //Cuenta cuantos elementos son grandes.
+coleccion.isEmpty() //Indica si una colección está vacía, es equivalente a "coleccion.size() > 0".
 
-coleccion.map({cosa => cosa.relleno()}) //Una lista con el relleno de cada cosa.
+coleccion.size() // consulta el tamaño de la colección
 
-coleccion.contains(cosa)
+coleccion.count({cosa => cosa.esGrande()}) //Cuenta cuantos elementos son grandes (consulta booleana)!
+
+coleccion.any({cosa => cosa.esGrande()}) //Consulta si existe algún objeto que cumpla la caracteristicad dada (consulta booleana).
+coleccion.all({cosa => cosa.esGigante()}) //Consulta si todos los objetos que cumplen la caracteristicad dada (consulta booleana).
+
+coleccion.min() // el objeto que es el máximo para objetos "ordenables".
+coleccion.max() // el objeto que es el mínimo para objetos "ordenables".
+
+coleccion.min({objeto => objeto.caracteristicaOrdenable()}) // el objeto que es el maximo según la carácteristica ordenable, no da el valor máximo si no el objeto!
+coleccion.max({objeto => objeto.caracteristicaOrdenable()}) // el objeto que es el mínimo según la carácteristica ordenable, no da el valor mínimo si no el objeto!
+
+coleccion.find({cosa => cosa.esRosa()}) // encuentra y devuelve la "primer" cosa rosa.
+
+coleccion.anyOne() //Devuelve cualquier elemento de la colección (NO DEBE ESTÁR VACÍA).
+
+occurrencesOf(object) //Indica la cantidad de veces que aparece un objeto dado.
+
+coleccion.map({cosa => cosa.relleno()}) // Transforma una colección en un lista 1 a 1 con la caracteristica / consulta dada (una lista con el relleno de cada cosa).
+
+coleccion.forEach({cosa => cosa.hacer()}) //Realiza las ordene con cada elemento de la colección (si se usa para consulta es un mal uso!).
 
 */
 
